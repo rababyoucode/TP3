@@ -1,34 +1,64 @@
 <DOCTYPE>
 <html>
     <head>
-        <link rel=" stylesheet" href="styletp2.css"> 
+        <link rel=" stylesheet" href="styltp3.css"> 
     </head>
     <body>
-         <fieldset> 
+        <h4>Bonjour la date est <time datetime="2022-08-12"> 12 aout 2022 </time></h4>
+        <label for="start">Bonjour la date est:</label>
+        <input type="date" id="start" name="trip-start"
+                value="2022-08-12"
+                min="2022-08-12" max="2022-12-31">
+         
+        <h4 id="pp" style="text-align: centre;"></h4>
+        <script
+        src="styletp3.js"> 
+        </script>
+         <fieldset>
          <legend>INSCRIPTION</legend>
+         
+         <form action="" method="get" >
+            <table>
+                <tr><td><label for="fname">Nom:</label><span style="color: brown;">*</span></td>
+                <td><input type="text" id="fname" Nom="fname" value="    "></td></tr>
 
-        <form action="">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" Nom="fname" value="    "><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" Prénom="lname" value="    "><br><br>
-            <label for="code">Code Postale:</label><br>
-            <input type="text" id="code" code postal="code" value="    "><br>
-        
-            <label for="paye">Pays:</label><br>
-            <select name="paye" id="pays">
-            <option type="text" id="pays" value="maroc">MAROC</option><br>
-            <option type="text" id="pays" value="france">FRANCE</option><br><br> 
-            </select> <br><br>   
+                <tr><td><label for="lname">Prénom :</label><span style="color: brown;">*</span></td>
+                <td><input type="text" id="lname" Prénom="lname" value="    "></td></tr>
+
+                <tr><td><label for="code">Code Postale:</label><span style="color: brown;">*</span></td>
+                <td><input type="text" id="code" code postal="code" value="    "></td></tr>
             
-            <label for="genre">GENRE:</label><br>
-            <input type="radio" id="genre" name="sexe" value="genre"><label for="genre">MASCULAIN</label><br>
-            <input type="radio" id="genre" name="sexe" value="genre"><label for="genre">FEMININ</label><br><br>
-        
-        </form> 
-        </fieldset>
-            <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+                <tr><td><label for="paye">Pays:</label><span style="color: brown;">*</span></td>
+                <td><select name="paye" id="pays">
+                <option type="text" id="pays" value="maroc">MAROC</option><br>
+                <option type="text" id="pays" value="france">FRANCE</option> 
+                </select></td></tr>  
+                
+                <tr><td><label for="genre">GENRE:</label><span style="color: brown;">*</span></td>
+                <td><input type="radio" id="genre" name="sexe" value="genre"><label for="genre">MASCULAIN</label><span style="color: brown;">*</span>
+                <input type="radio" id="genre" name="sexe" value="genre"><label for="genre">FEMININ</label></td></tr>
+                
+                <tr><td><label for="pf">Préference de contact :</label><span style="color: brown;">*</span></td>
+                <td><input type="checkbox" id="pf" value="fax"><label for="pf">Fax</label>
+                <input type="checkbox" id="pf" value="fax"><label for="pf">Email</label>
+                <input type="checkbox" id="pf" value="fax"><label for="pf">Téléphone</label></td></tr>
 
+                <tr><td><label for="mail">Email:</label><span style="color: brown;">*</span></td>
+                <td><input type="text" id="mail" Nom="mail" value="    "></td></tr>
+                <tr><td><label for="passw">PassWord (6-8 characters):</label></td>
+                <td><input type="text" id="passw" Nom="passw" value="    "></td></tr>
+                <tr><td><label for="vpass"> Verification PassWord:</label><span style="color: brown;">*</span></td></tr>
+                <tr><td><input type="submit" onclick="validateForm()" value="Envoyer">
+                <input type="submit"  value="Effacer"></td></tr>
+
+
+            
+        </table>
+        </form> 
+        
+        </fieldset>
+             
+        <p id="yr">put the yars here</p> 
     </body>
 </html>
 </DOCTYPE>
